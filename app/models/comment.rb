@@ -3,5 +3,5 @@ class Comment < ApplicationRecord
   belongs_to :user
 
   has_many :comments_likes, dependent: :destroy
-  has_many :comment_liking_users, through: :comments_likes, source: :user
+  has_many :liking_users, through: :comments_likes, source: :user
 end

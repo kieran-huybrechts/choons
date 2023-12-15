@@ -7,15 +7,16 @@ class User < ApplicationRecord
   has_many :circles, through: :circles_users
 
   # Follower relationships
-  has_many :follower_relationships, class_name: 'Following', dependent: :destroy
+  has_many :follower_relationships, class_name: 'Following', foreign_key: 'followee_id', dependent: :destroy
   has_many :followers, through: :follower_relationships, source: :follower
 
   # Followee relationships
-  has_many :following_relationships, class_name: 'Following', dependent: :destroy
-  has_many :following, through: :following_relationships, source: :followee
+  has_many :following_relationships, class_name: 'Following', foreign_key: 'follower_id', dependent: :destroy
+  has_many :followees, through: :following_relationships, source: :followee
 
-  has_many :sent_messages, class_name: 'Message', dependent: :destroy
-  has_many :received_messages, class_name: 'Message', dependent: :destroy
+
+  has_many :sent_messages, class_name: 'Message', foreign_key: 'sender_id', dependent: :destroy
+  has_many :received_messages, class_name: 'Message', foreign_key: 'receiver_id', dependent: :destroy
 
   has_many :likes_posts, dependent: :destroy
 

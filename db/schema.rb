@@ -115,8 +115,8 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_09_200605) do
   end
 
   create_table "posts", force: :cascade do |t|
-    t.bigint "circle_id", null: false
-    t.bigint "receiver_id", null: false
+    t.bigint "circle_id"
+    t.bigint "receiver_id"
     t.string "description"
     t.string "category"
     t.datetime "created_at", null: false
@@ -139,8 +139,6 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_09_200605) do
 
   create_table "songs", force: :cascade do |t|
     t.string "spotify_url"
-    t.string "artist"
-    t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

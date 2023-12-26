@@ -15,6 +15,32 @@
         </button>
 
     </div>
+    <iframe style="border-radius: 10px" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1592245003&color=%235c149c&auto_play=true&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/jucyproducer" title="JUCY" target="_blank" style="color: #cccccc; text-decoration: none;"></a> <a href="https://soundcloud.com/jucyproducer/my-world-is-changing" title="My World Is Changing [FREE DL]" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
+  </div>
+<% end %>
+
+
+
+
+
+
+<% if post.circle %>
+  <div class="post-card circle-post">
+    <div class="post-details mb-2">
+      <div class="post-creator-details">
+        <%= cl_image_tag(post.creator.photo.key, class: "avatar-left") %>
+        <div class="username-posttype">
+          <p class="bold-text"> <%= post.creator.username %> </p>
+          <p class="small-text"> in <%=post.circle.name %> </p>
+        </div>
+      </div>
+
+        <button class ="btn-scope-circle">
+          <p> Circle </p>
+          <%= cl_image_tag(post.circle.photo.key, class: "avatar-small-right") %>
+        </button>
+
+    </div>
     <iframe style="border-radius:12px" src="<%= post.songs.first.spotify_embed_url%>" width="100%" height="382" frameBorder="1" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   </div>
 

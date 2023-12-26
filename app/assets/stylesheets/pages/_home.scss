@@ -1,6 +1,60 @@
-.feedscope-round-btn {
-  width: 32%;
-  border-radius: 50%;
-  padding-top: 4px;
-  padding-bottom: 4px
+.post-card {
+  margin-bottom: 20px;
+}
+
+.post-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-creator-details {
+  display: flex;
+  align-items: center;
+}
+
+.btn-scope-circle {
+  height: 33px;
+  width: 110px;
+  padding-left: 9px;
+  padding-right: 9px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 9px;
+  border: 1px solid #e17a04;
+
+  p {
+    color: #e17a04;
+  }
+}
+
+
+.btn-scope-1 {
+  height: 33px;
+  width: 110px;
+  padding-left: 9px;
+  padding-right: 9px;
+  background-color: transparent;
+  border-radius: 9px;
+  border: 1px solid #419b63;
+
+  p {
+    color: #419b63;
+  }
+}
+
+.btn-scope-public {
+  height: 33px;
+  width: 110px;
+  padding-left: 9px;
+  padding-right: 9px;
+  background-color: transparent;
+  border-radius: 9px;
+  border: 1px solid #36abe1;
+
+  p {
+    color: #36abe1;
+  }
 }

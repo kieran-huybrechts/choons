@@ -1,20 +1,51 @@
 .avatar {
-  width: 40px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
 }
-.avatar-large {
-  width: 56px;
+
+.avatar-left {
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
+  margin-right: 6px;
 }
-.avatar-bordered {
+
+.avatar-right {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-left: 6px;
+}
+
+.avatar-small-left {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.avatar-small-right {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  margin-left: 6px;
+}
+
+.avatar-bordered-left {
   width: 40px;
+  height: 40px;
   border-radius: 50%;
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   border: white 1px solid;
+  margin-right: 6px;
 }
-.avatar-square {
+
+.avatar-bordered-right {
   width: 40px;
-  border-radius: 0px;
+  height: 40px;
+  border-radius: 50%;
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   border: white 1px solid;
+  margin-left: 6px;
 }

@@ -1,0 +1,65 @@
+<% if post.circle %>
+  <div class="post-card circle-post">
+    <div class="post-details mb-2">
+      <div class="post-creator-details">
+        <%= cl_image_tag(post.creator.photo.key, class: "avatar-left") %>
+        <div class="username-posttype">
+          <p class="bold-text"> <%= post.creator.username %> </p>
+          <p class="small-text"> in <%=post.circle.name %> </p>
+        </div>
+      </div>
+
+        <button class ="btn-scope-circle">
+          <p> Circle </p>
+          <%= cl_image_tag(post.circle.photo.key, class: "avatar-small-right") %>
+        </button>
+
+    </div>
+    <iframe style="border-radius:12px" src="<%= post.songs.first.spotify_embed_url%>" width="100%" height="382" frameBorder="1" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+<% elsif post.receiver %>
+  <div class="post-card circle-post">
+    <div class="post-details mb-2">
+      <div class="post-creator-details">
+        <%= cl_image_tag(post.creator.photo.key, class: "avatar-left") %>
+        <div class="username-posttype">
+          <p class="bold-text"> <%= post.creator.username %> </p>
+          <p class="small-text"> for you </p>
+        </div>
+      </div>
+
+        <button class ="btn-scope-1">
+          <p> 1-on-1 </p>
+        </button>
+
+    </div>
+    <iframe style="border-radius:12px" src="<%= post.songs.first.spotify_embed_url%>" width="100%" height="382" frameBorder="1" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+
+<% else post.receiver %>
+  <div class="post-card circle-post">
+    <div class="post-details mb-2">
+      <div class="post-creator-details">
+        <%= cl_image_tag(post.creator.photo.key, class: "avatar-left") %>
+        <div class="username-posttype">
+          <p class="bold-text"> <%= post.creator.username %> </p>
+          <p class="small-text"> public </p>
+        </div>
+      </div>
+
+        <button class ="btn-scope-public">
+          <p> Following </p>
+        </button>
+
+    </div>
+    <iframe style="border-radius:12px" src="<%= post.songs.first.spotify_embed_url%>" width="100%" height="382" frameBorder="1" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+
+
+
+
+
+<% end %>

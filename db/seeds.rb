@@ -38,7 +38,7 @@ user2 = User.create!(
   username: 'ZeBird'
 )
 
-user2_url = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-photo%2Fcar-is-parked-desert-with-cactus-sunset-background-with-pink-sky-ai_36761886.htm&psig=AOvVaw005ZFaB_OelKt5Qm_WXwox&ust=1702738840740000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIDzwNDakYMDFQAAAAAdAAAAABAI'
+user2_url = 'https://messages-personnels.com/wp-content/uploads/2023/08/kolors-italodisco.jpg'
 user2_file = URI.open(user2_url)
 user2.photo.attach(io: user2_file, filename: 'user2_img.jpeg', content_type: 'image/png')
 user2.save!
@@ -124,15 +124,16 @@ puts "Succesfully generated #{Circle.count} circles"
 
 puts 'Generating songs...'
 
-song1 = Song.create!(spotify_url: 'https://open.spotify.com/track/4QreGo9Ivksjv4c3Bnk5f3?si=7f7f1b6b88a849a5')
-song2 = Song.create!(spotify_url: 'https://open.spotify.com/track/0PGIuagZEKjb3PMTnS0tGZ?si=c2086ce805774065')
-song3 = Song.create!(spotify_url: 'https://open.spotify.com/track/0WhWz82kaHo2ulbhuHTth8?si=9e39daf1e756410b')
-song4 = Song.create!(spotify_url: 'https://open.spotify.com/track/5aWVNrjqFHCATLIhS2na3t?si=e493c7a6071c4f2b')
-song5 = Song.create!(spotify_url: 'https://open.spotify.com/track/72gThlE28ynbFgSVkdZkdo?si=77feb532d71a4b37')
-song6 = Song.create!(spotify_url: 'https://open.spotify.com/track/7n2kFvSGMN51HVITbVgyu9?si=f50ed0088a724905')
-song7 = Song.create!(spotify_url: 'https://open.spotify.com/track/2dXBGKusFEVysXoBhv9hmZ?si=48b14521320245e2')
-song8 = Song.create!(spotify_url: 'https://open.spotify.com/track/6yCfjMCxxqrMTwGTOfnkoa?si=5632d341a8a84884')
-song9 = Song.create!(spotify_url: 'https://open.spotify.com/track/67ng2HslmmlZOkwZY7rqPy?si=d29f6da2d8ab4c19')
+
+song1 = Song.create!(spotify_url: 'https://open.spotify.com/track/4QreGo9Ivksjv4c3Bnk5f3?si=7f7f1b6b88a849a5', spotify_embed_url: 'https://open.spotify.com/embed/track/4QreGo9Ivksjv4c3Bnk5f3?utm_source=generator')
+song2 = Song.create!(spotify_url: 'https://open.spotify.com/track/0PGIuagZEKjb3PMTnS0tGZ?si=c2086ce805774065', spotify_embed_url: 'https://open.spotify.com/embed/track/0PGIuagZEKjb3PMTnS0tGZ?utm_source=generator')
+song3 = Song.create!(spotify_url: 'https://open.spotify.com/track/0WhWz82kaHo2ulbhuHTth8?si=9e39daf1e756410b', spotify_embed_url: 'https://open.spotify.com/embed/track/0WhWz82kaHo2ulbhuHTth8?utm_source=generator')
+song4 = Song.create!(spotify_url: 'https://open.spotify.com/track/5aWVNrjqFHCATLIhS2na3t?si=e493c7a6071c4f2b', spotify_embed_url: 'https://open.spotify.com/embed/track/5aWVNrjqFHCATLIhS2na3t?utm_source=generator')
+song5 = Song.create!(spotify_url: 'https://open.spotify.com/track/72gThlE28ynbFgSVkdZkdo?si=77feb532d71a4b37', spotify_embed_url: 'https://open.spotify.com/embed/track/72gThlE28ynbFgSVkdZkdo?utm_source=generator')
+song6 = Song.create!(spotify_url: 'https://open.spotify.com/track/7n2kFvSGMN51HVITbVgyu9?si=f50ed0088a724905', spotify_embed_url: 'https://open.spotify.com/embed/track/7n2kFvSGMN51HVITbVgyu9?utm_source=generator')
+song7 = Song.create!(spotify_url: 'https://open.spotify.com/track/2dXBGKusFEVysXoBhv9hmZ?si=48b14521320245e2', spotify_embed_url: 'https://open.spotify.com/embed/track/2dXBGKusFEVysXoBhv9hmZ?utm_source=generator')
+song8 = Song.create!(spotify_url: 'https://open.spotify.com/track/6yCfjMCxxqrMTwGTOfnkoa?si=5632d341a8a84884', spotify_embed_url: 'https://open.spotify.com/embed/track/6yCfjMCxxqrMTwGTOfnkoa?utm_source=generator')
+song9 = Song.create!(spotify_url: 'https://open.spotify.com/track/67ng2HslmmlZOkwZY7rqPy?si=d29f6da2d8ab4c19', spotify_embed_url: 'https://open.spotify.com/embed/track/67ng2HslmmlZOkwZY7rqPy?utm_source=generator')
 
 puts "Succesfully generated #{Song.count} songs"
 
@@ -143,42 +144,42 @@ post1 = Post.create!(
   category: 'Solo'
 )
 
-PostsUser.create!(post: post1, user: user1, song: song1)
+PostsUser.create!(post: post1, user: user1, song: song1, is_creator: true)
 
 post2 = Post.create!(
   description: 'Ni siquiera sé lo que estoy escuchando',
   category: 'Solo'
 )
 
-PostsUser.create!(post: post2, user: user2, song: song2)
+PostsUser.create!(post: post2, user: user2, song: song2, is_creator: true)
 
 post3 = Post.create!(
   description: 'Wobble wobble',
   category: 'Solo'
 )
 
-PostsUser.create!(post: post3, user: user3, song: song3)
+PostsUser.create!(post: post3, user: user3, song: song3, is_creator: true)
 
 post4 = Post.create!(
   description: 'Best ever Daft Punk remix?',
   category: 'Solo'
 )
 
-PostsUser.create!(post: post4, user: user4, song: song4)
+PostsUser.create!(post: post4, user: user4, song: song4, is_creator: true)
 
 post5 = Post.create!(
   description: 'Probably my favourite Bonzai track',
   category: 'Solo'
 )
 
-PostsUser.create!(post: post5, user: user5, song: song5)
+PostsUser.create!(post: post5, user: user5, song: song5, is_creator: true)
 
 post6 = Post.create!(
   description: 'Damon Albarn with another sweet little sidequest',
   category: 'Solo'
 )
 
-PostsUser.create!(post: post6, user: user1, song: song6)
+PostsUser.create!(post: post6, user: user1, song: song6, is_creator: true)
 
 post7 = Post.create!(
   description: "Tunes don't get a lot better than this",
@@ -186,7 +187,7 @@ post7 = Post.create!(
   circle: circle1
 )
 
-PostsUser.create!(post: post7, user: user1, song: song7)
+PostsUser.create!(post: post7, user: user1, song: song7, is_creator: true)
 
 post8 = Post.create!(
   description: 'Some South African vibes',
@@ -194,7 +195,7 @@ post8 = Post.create!(
   circle: circle2
 )
 
-PostsUser.create!(post: post8, user: user2, song: song8)
+PostsUser.create!(post: post8, user: user2, song: song8, is_creator: true)
 
 post9 = Post.create!(
   description: "Some hard bangin' grooves",
@@ -202,6 +203,6 @@ post9 = Post.create!(
   circle: circle1
 )
 
-PostsUser.create!(post: post9, user: user3, song: song9)
+PostsUser.create!(post: post9, user: user3, song: song9, is_creator: true)
 
 puts "Succesfully generated #{Post.count} Posts"

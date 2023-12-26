@@ -11,4 +11,8 @@ class Post < ApplicationRecord
   has_many :comments, dependent: :destroy
 
   validates :category, inclusion: { in: VALID_CATEGORIES }
+
+  def creator
+    User.joins(:posts_users).merge(PostsUser.where(post_id: id, is_creator: true)).first
+  end
 end

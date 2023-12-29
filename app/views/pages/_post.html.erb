@@ -2,7 +2,7 @@
   <div class="post-card circle-post">
     <div class="post-details mb-2">
       <div class="post-creator-details">
-        <%= cl_image_tag(post.creator.photo.key, class: "avatar-left") %>
+        <%= cl_image_tag(post.creator.photo.key, class: "avatar-left", secure: true) %>
         <div class="username-posttype">
           <p class="bold-text"> <%= post.creator.username %> </p>
           <p class="small-text"> in <%=post.circle.name %> </p>
@@ -11,7 +11,7 @@
 
         <button class ="btn-scope-circle">
           <p> Circle </p>
-          <%= cl_image_tag(post.circle.photo.key, class: "avatar-small-right") %>
+          <%= cl_image_tag(post.circle.photo.key, class: "avatar-small-right", secure: true) %>
         </button>
 
     </div>
@@ -28,7 +28,7 @@
   <div class="post-card circle-post">
     <div class="post-details mb-2">
       <div class="post-creator-details">
-        <%= cl_image_tag(post.creator.photo.key, class: "avatar-left") %>
+        <%= cl_image_tag(post.creator.photo.key, class: "avatar-left", secure: true) %>
         <div class="username-posttype">
           <p class="bold-text"> <%= post.creator.username %> </p>
           <p class="small-text"> in <%=post.circle.name %> </p>
@@ -37,7 +37,7 @@
 
         <button class ="btn-scope-circle">
           <p> Circle </p>
-          <%= cl_image_tag(post.circle.photo.key, class: "avatar-small-right") %>
+          <%= cl_image_tag(post.circle.photo.key, class: "avatar-small-right", secure: true) %>
         </button>
 
     </div>
@@ -48,7 +48,7 @@
   <div class="post-card circle-post">
     <div class="post-details mb-2">
       <div class="post-creator-details">
-        <%= cl_image_tag(post.creator.photo.key, class: "avatar-left") %>
+        <%= cl_image_tag(post.creator.photo.key, class: "avatar-left", secure: true) %>
         <div class="username-posttype">
           <p class="bold-text"> <%= post.creator.username %> </p>
           <p class="small-text"> for you </p>
@@ -68,7 +68,7 @@
   <div class="post-card circle-post">
     <div class="post-details mb-2">
       <div class="post-creator-details">
-        <%= cl_image_tag(post.creator.photo.key, class: "avatar-left") %>
+        <%= cl_image_tag(post.creator.photo.key, class: "avatar-left", secure: true) %>
         <div class="username-posttype">
           <p class="bold-text"> <%= post.creator.username %> </p>
           <p class="small-text"> public </p>

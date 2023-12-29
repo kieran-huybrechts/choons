@@ -126,14 +126,21 @@ puts 'Generating songs...'
 
 
 song1 = Song.create!(spotify_url: 'https://open.spotify.com/track/4QreGo9Ivksjv4c3Bnk5f3?si=7f7f1b6b88a849a5', spotify_embed_url: 'https://open.spotify.com/embed/track/4QreGo9Ivksjv4c3Bnk5f3?utm_source=generator')
-song2 = Song.create!(spotify_url: 'https://open.spotify.com/track/0PGIuagZEKjb3PMTnS0tGZ?si=c2086ce805774065', spotify_embed_url: 'https://open.spotify.com/embed/track/0PGIuagZEKjb3PMTnS0tGZ?utm_source=generator')
-song3 = Song.create!(spotify_url: 'https://open.spotify.com/track/0WhWz82kaHo2ulbhuHTth8?si=9e39daf1e756410b', spotify_embed_url: 'https://open.spotify.com/embed/track/0WhWz82kaHo2ulbhuHTth8?utm_source=generator')
+song10 = Song.create!(soundcloud_url: 'https://soundcloud.com/audiobambino/25-dido?si=5af641d2cd4c43e086f28baa1030d0ba&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', soundcloud_embed_url: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1097138893&color=%230a042f&auto_play=true&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true&sharing=false&buying=false&download=false')
+song2 = Song.create!(spotify_url: 'https://open.spotify.com/track/0WhWz82kaHo2ulbhuHTth8?si=9e39daf1e756410b', spotify_embed_url: 'https://open.spotify.com/embed/track/0WhWz82kaHo2ulbhuHTth8?utm_source=generator')
+song11 = Song.create!(soundcloud_url: 'https://soundcloud.com/jucyproducer/my-world-is-changing?si=e41e2a9caadb4bf7b28d5e4f4f3d9069&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', soundcloud_embed_url: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1592245003&color=%230a042f&auto_play=true&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true&sharing=false&buying=false&download=false')
+song3 = Song.create!(spotify_url: 'https://open.spotify.com/track/0PGIuagZEKjb3PMTnS0tGZ?si=c2086ce805774065', spotify_embed_url: 'https://open.spotify.com/embed/track/0PGIuagZEKjb3PMTnS0tGZ?utm_source=generator')
+song12 = Song.create!(soundcloud_url: 'https://soundcloud.com/mainphase001/sonique2019?si=76b2b6ca0a64455e80094bb4c5c3c38d&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', soundcloud_embed_url: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/589587396&color=%230a042f&auto_play=true&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true&sharing=false&buying=false&download=false')
 song4 = Song.create!(spotify_url: 'https://open.spotify.com/track/5aWVNrjqFHCATLIhS2na3t?si=e493c7a6071c4f2b', spotify_embed_url: 'https://open.spotify.com/embed/track/5aWVNrjqFHCATLIhS2na3t?utm_source=generator')
+song13 = Song.create!(soundcloud_url: 'https://soundcloud.com/cxli-fn/rave-2-the-grave-give-a-little-love-nrg-jedi-recordings-stormtrooper-recordings?si=e1aa2868928e4a099b333f530592720d&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', soundcloud_embed_url: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/790103824&color=%230a042f&auto_play=true&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true&sharing=false&buying=false&download=false')
 song5 = Song.create!(spotify_url: 'https://open.spotify.com/track/72gThlE28ynbFgSVkdZkdo?si=77feb532d71a4b37', spotify_embed_url: 'https://open.spotify.com/embed/track/72gThlE28ynbFgSVkdZkdo?utm_source=generator')
+song14 = Song.create!(soundcloud_url: 'https://soundcloud.com/djheartstring/narciss-dj-heartstring-in-the-heat-of-the-night?si=7178c7bdcc094252a1ac5ee3dae28295&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', soundcloud_embed_url: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1141552543&color=%230a042f&auto_play=true&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true&sharing=false&buying=false&download=false')
 song6 = Song.create!(spotify_url: 'https://open.spotify.com/track/7n2kFvSGMN51HVITbVgyu9?si=f50ed0088a724905', spotify_embed_url: 'https://open.spotify.com/embed/track/7n2kFvSGMN51HVITbVgyu9?utm_source=generator')
+song15 = Song.create!(soundcloud_url: 'https://soundcloud.com/johnbonjorno/dj-bruder-forever-bb?si=9cfe2e6398154e428b16dcdcac4ac99a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', soundcloud_embed_url: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1351563160&color=%230a042f&auto_play=true&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true&sharing=false&buying=false&download=false')
 song7 = Song.create!(spotify_url: 'https://open.spotify.com/track/2dXBGKusFEVysXoBhv9hmZ?si=48b14521320245e2', spotify_embed_url: 'https://open.spotify.com/embed/track/2dXBGKusFEVysXoBhv9hmZ?utm_source=generator')
 song8 = Song.create!(spotify_url: 'https://open.spotify.com/track/6yCfjMCxxqrMTwGTOfnkoa?si=5632d341a8a84884', spotify_embed_url: 'https://open.spotify.com/embed/track/6yCfjMCxxqrMTwGTOfnkoa?utm_source=generator')
 song9 = Song.create!(spotify_url: 'https://open.spotify.com/track/67ng2HslmmlZOkwZY7rqPy?si=d29f6da2d8ab4c19', spotify_embed_url: 'https://open.spotify.com/embed/track/67ng2HslmmlZOkwZY7rqPy?utm_source=generator')
+
 
 puts "Succesfully generated #{Song.count} songs"
 
@@ -146,33 +153,74 @@ post1 = Post.create!(
 
 PostsUser.create!(post: post1, user: user1, song: song1, is_creator: true)
 
+post10 = Post.create!(
+  description: 'GOAT Soundcloud choon?',
+  category: 'Solo',
+  circle: circle1
+)
+
+PostsUser.create!(post: post10, user: user2, song: song10, is_creator: true)
+
 post2 = Post.create!(
-  description: 'Ni siquiera sé lo que estoy escuchando',
+  description: 'Dude this is such a choon!',
+  category: 'Solo',
+  receiver: user1
+)
+
+PostsUser.create!(post: post2, user: user3, song: song2, is_creator: true)
+
+post11 = Post.create!(
+  description: '3090 <3',
   category: 'Solo'
 )
 
-PostsUser.create!(post: post2, user: user2, song: song2, is_creator: true)
+PostsUser.create!(post: post11, user: user4, song: song11, is_creator: true)
 
 post3 = Post.create!(
-  description: 'Wobble wobble',
+  description: 'Ni siquiera sé lo que estoy escuchando, pero esto es la bomba',
   category: 'Solo'
 )
 
-PostsUser.create!(post: post3, user: user3, song: song3, is_creator: true)
+PostsUser.create!(post: post3, user: user1, song: song3, is_creator: true)
+
+post12 = Post.create!(
+  description: 'Did you see this breakbeat edit of Sonique?',
+  category: 'Solo',
+  receiver: user1
+)
+
+PostsUser.create!(post: post12, user: user2, song: song12, is_creator: true)
 
 post4 = Post.create!(
   description: 'Best ever Daft Punk remix?',
   category: 'Solo'
 )
 
-PostsUser.create!(post: post4, user: user4, song: song4, is_creator: true)
+PostsUser.create!(post: post4, user: user3, song: song4, is_creator: true)
 
-post5 = Post.create!(
-  description: 'Probably my favourite Bonzai track',
-  category: 'Solo'
+post13 = Post.create!(
+  description: 'Rave 2 The Grave innit fam?',
+  category: 'Solo',
+  circle: circle1
 )
 
-PostsUser.create!(post: post5, user: user5, song: song5, is_creator: true)
+PostsUser.create!(post: post13, user: user4, song: song13, is_creator: true)
+
+post5 = Post.create!(
+  description: 'Bro imagine if we lived the Bonzai days',
+  category: 'Solo',
+  receiver: user1
+)
+
+PostsUser.create!(post: post5, user: user2, song: song5, is_creator: true)
+
+post14 = Post.create!(
+  description: 'You were right about DJ HEARTSTRING, this slaps',
+  category: 'Solo',
+  receiver: user1
+)
+
+PostsUser.create!(post: post14, user: user3, song: song14, is_creator: true)
 
 post6 = Post.create!(
   description: 'Damon Albarn with another sweet little sidequest',
@@ -181,10 +229,17 @@ post6 = Post.create!(
 
 PostsUser.create!(post: post6, user: user1, song: song6, is_creator: true)
 
+post15 = Post.create!(
+  description: 'Groovy stuff brodies',
+  category: 'Solo',
+  circle: circle1
+)
+
+PostsUser.create!(post: post15, user: user2, song: song15, is_creator: true)
+
 post7 = Post.create!(
   description: "Tunes don't get a lot better than this",
   category: 'Solo',
-  circle: circle1
 )
 
 PostsUser.create!(post: post7, user: user1, song: song7, is_creator: true)
@@ -192,7 +247,6 @@ PostsUser.create!(post: post7, user: user1, song: song7, is_creator: true)
 post8 = Post.create!(
   description: 'Some South African vibes',
   category: 'Solo',
-  circle: circle2
 )
 
 PostsUser.create!(post: post8, user: user2, song: song8, is_creator: true)

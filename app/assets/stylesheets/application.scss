@@ -6,15 +6,48 @@
 // External libraries
 @import "bootstrap";
 @import "font-awesome";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
 
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
 
+
 body {
-  background-color: rgb(40, 40, 40);
+  // background: linear-gradient(
+  //   to bottom right,
+  //   #00172d,   /* Super dark blue at the top left */
+  //   #001f3f 30%,  /* Same color at the middle to keep it dark */
+  //   #083258 50%,  /* Slightly lighter blue towards the bottom right */
+  //   #003366 70%  /* Slightly darker blue at the bottom right */
+  // );
+  background-color: black;
 }
+
+// body {
+//   background: linear-gradient(
+//     to bottom right,
+//     #00172d,   /* Super dark blue at the top left */
+//     #001f3f 50%,  /* Same color at the middle to keep it dark */
+//     #083258 70%,  /* Slightly lighter blue towards the bottom right */
+//     #003366 100%  /* Slightly darker blue at the bottom right */
+//   );
+//   // background-color: rgb(40, 40, 40);
+// }
 
 p, h1, h2, h3, li, a {
   margin: 0px 0px;
+}
+
+.text-choons-blue {
+  color: $choons-blue;
+}
+
+.text-choons-yellow {
+  color: $choons-yellow;
+}
+
+.text-choons-green {
+  color: $choons-green;
 }

@@ -2,8 +2,8 @@
   "name": "app",
   "private": true,
   "engines": {
-    "node": "20.9",
-    "yarn": "1.22.19"
+    "node": "16.15.1",
+    "yarn": "1.22.x"
   },
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2",

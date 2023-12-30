@@ -1,42 +1,68 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid">
-    <%= link_to root_path, class: "navbar-brand" do %>
+<div class="navbar-home">
+  <%= link_to root_path, class: "navbar-brand" do %>
       <span class="navbar-text">
-        <span class="text-choons-blue" style="font-size: 1.2em;">c</span><span class="text-choons-blue" style="font-size: 1.2em;">h</span><span class="text-choons-yellow" style="font-size: 1.2em;">o</span><span class="text-choons-yellow" style="font-size: 1.2em;">o</span><span class="text-choons-green" style="font-size: 1.2em;">n</span><span class="text-choons-green" style="font-size: 1.2em;">s</span>
+        <span class="text-choons-purple choons-logo-letter">c</span><span class="text-choons-purple choons-logo-letter">h</span><span class="text-choons-yellow choons-logo-letter">o</span><span class="text-choons-yellow choons-logo-letter">o</span><span class="text-choons-green choons-logo-letter">n</span><span class="text-choons-green choons-logo-letter">s</span>
       </span>
-    <% end %>
+  <% end %>
 
+  <div class="navbar-icons">
+    <i class="bi bi-vinyl text-white" style="font-size: 36px;"></i>
+    <i class="bi bi-bell text-white" style="font-size: 36px; margin-left: 36px"></i>
+    <i class="bi bi-chat-dots text-white" style="font-size: 36px; margin-left: 36px"></i>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div class="container-fluid">
+    <%#= link_to root_path, class: "navbar-brand" do %>-->
+<!--      <span class="navbar-text">
+        <span class="text-choons-purple " style="font-size: 1.2em; font-weight: bold">c</span><span class="text-choons-purple" style="font-size: 1.2em; font-weight: bold">h</span><span class="text-choons-yellow" style="font-size: 1.2em; font-weight: bold">o</span><span class="text-choons-yellow" style="font-size: 1.2em; font-weight: bold">o</span><span class="text-choons-green" style="font-size: 1.2em; font-weight: bold;">n</span><span class="text-choons-green" style="font-size: 1.2em; font-weight: bold;">s</span>
+      </span>
+    <%# end %>-->
+<!--
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse navbar-container" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
-        <% if user_signed_in? %>
-          <li class="nav-item active">
-            <%= link_to "Home", "#", class: "nav-link" %>
-          </li>
+        <%# if user_signed_in? %>-->
+<!--          <li class="nav-item active">-->
+            <%#= link_to "Home", "#", class: "nav-link" %>
+<!--          </li>
           <li class="nav-item">
-            <%= link_to "Messages", "#", class: "nav-link" %>
-          </li>
+            <%#= link_to "Messages", "#", class: "nav-link" %>-->
+<!--          </li>
           <li class="nav-item dropdown">
             <a href="#" class="avatar" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar", alt: "dropdown menu" %>
-            </a>
+              <%#= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar", alt: "dropdown menu" %>-->
+<!--            </a>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Action", "#", class: "dropdown-item" %>
-              <%= link_to "Another action", "#", class: "dropdown-item" %>
-              <%= link_to "Log out", destroy_user_session_path, method: :delete, data: { turbo_method: :delete }, class: "dropdown-item" %>
-            </div>
+              <%#= link_to "Action", "#", class: "dropdown-item" %>-->
+              <%#= link_to "Another action", "#", class: "dropdown-item" %>
+              <%#= link_to "Log out", destroy_user_session_path, method: :delete, data: { turbo_method: :delete }, class: "dropdown-item" %>
+<!--            </div>
           </li>
-        <% else %>
-          <li class="nav-item">
-            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-          </li>
-        <% end %>
-      </ul>
+        <%# else %>-->
+<!--          <li class="nav-item">-->
+            <%#= link_to "Login", new_user_session_path, class: "nav-link" %>
+<!--          </li>-->
+        <%# end %>
+<!--      </ul>
     </div>
   </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+-->

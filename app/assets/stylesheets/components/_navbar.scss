@@ -7,16 +7,19 @@
   top: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: black;
+  margin-bottom: 10px;
 }
 
 .navbar-icons {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .choons-logo-letter {
-  font-size: 2.1em;
+  font-size: 1.6em;
   font-weight: bold
 }
 

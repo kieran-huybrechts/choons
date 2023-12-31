@@ -125,21 +125,21 @@ puts "Succesfully generated #{Circle.count} circles"
 puts 'Generating songs...'
 
 
-song1 = Song.create!(spotify_url: 'https://open.spotify.com/track/4QreGo9Ivksjv4c3Bnk5f3?si=7f7f1b6b88a849a5', spotify_embed_url: 'https://open.spotify.com/embed/track/4QreGo9Ivksjv4c3Bnk5f3?utm_source=generator')
+song1 = Song.create!(spotify_track_id: '4QreGo9Ivksjv4c3Bnk5f3')
 song10 = Song.create!(soundcloud_url: 'https://soundcloud.com/audiobambino/25-dido?si=5af641d2cd4c43e086f28baa1030d0ba&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', soundcloud_embed_url: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1097138893&color=%230a042f&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true&sharing=false&buying=false&download=false')
-song2 = Song.create!(spotify_url: 'https://open.spotify.com/track/0WhWz82kaHo2ulbhuHTth8?si=9e39daf1e756410b', spotify_embed_url: 'https://open.spotify.com/embed/track/0WhWz82kaHo2ulbhuHTth8?utm_source=generator')
+song2 = Song.create!(spotify_track_id: '0WhWz82kaHo2ulbhuHTth8')
 song11 = Song.create!(soundcloud_url: 'https://soundcloud.com/jucyproducer/my-world-is-changing?si=e41e2a9caadb4bf7b28d5e4f4f3d9069&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', soundcloud_embed_url: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1592245003&color=%230a042f&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true&sharing=false&buying=false&download=false')
-song3 = Song.create!(spotify_url: 'https://open.spotify.com/track/0PGIuagZEKjb3PMTnS0tGZ?si=c2086ce805774065', spotify_embed_url: 'https://open.spotify.com/embed/track/0PGIuagZEKjb3PMTnS0tGZ?utm_source=generator')
+song3 = Song.create!(spotify_track_id: '0PGIuagZEKjb3PMTnS0tGZ')
 song12 = Song.create!(soundcloud_url: 'https://soundcloud.com/mainphase001/sonique2019?si=76b2b6ca0a64455e80094bb4c5c3c38d&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', soundcloud_embed_url: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/589587396&color=%230a042f&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true&sharing=false&buying=false&download=false')
-song4 = Song.create!(spotify_url: 'https://open.spotify.com/track/5aWVNrjqFHCATLIhS2na3t?si=e493c7a6071c4f2b', spotify_embed_url: 'https://open.spotify.com/embed/track/5aWVNrjqFHCATLIhS2na3t?utm_source=generator')
+song4 = Song.create!(spotify_track_id: '5aWVNrjqFHCATLIhS2na3t')
 song13 = Song.create!(soundcloud_url: 'https://soundcloud.com/cxli-fn/rave-2-the-grave-give-a-little-love-nrg-jedi-recordings-stormtrooper-recordings?si=e1aa2868928e4a099b333f530592720d&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', soundcloud_embed_url: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/790103824&color=%230a042f&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true&sharing=false&buying=false&download=false')
-song5 = Song.create!(spotify_url: 'https://open.spotify.com/track/72gThlE28ynbFgSVkdZkdo?si=77feb532d71a4b37', spotify_embed_url: 'https://open.spotify.com/embed/track/72gThlE28ynbFgSVkdZkdo?utm_source=generator')
+song5 = Song.create!(spotify_track_id: '72gThlE28ynbFgSVkdZkdo')
 song14 = Song.create!(soundcloud_url: 'https://soundcloud.com/djheartstring/narciss-dj-heartstring-in-the-heat-of-the-night?si=7178c7bdcc094252a1ac5ee3dae28295&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', soundcloud_embed_url: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1141552543&color=%230a042f&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true&sharing=false&buying=false&download=false')
-song6 = Song.create!(spotify_url: 'https://open.spotify.com/track/7n2kFvSGMN51HVITbVgyu9?si=f50ed0088a724905', spotify_embed_url: 'https://open.spotify.com/embed/track/7n2kFvSGMN51HVITbVgyu9?utm_source=generator')
+song6 = Song.create!(spotify_track_id: '7n2kFvSGMN51HVITbVgyu9')
 song15 = Song.create!(soundcloud_url: 'https://soundcloud.com/johnbonjorno/dj-bruder-forever-bb?si=9cfe2e6398154e428b16dcdcac4ac99a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', soundcloud_embed_url: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1351563160&color=%230a042f&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true&sharing=false&buying=false&download=false')
-song7 = Song.create!(spotify_url: 'https://open.spotify.com/track/2dXBGKusFEVysXoBhv9hmZ?si=48b14521320245e2', spotify_embed_url: 'https://open.spotify.com/embed/track/2dXBGKusFEVysXoBhv9hmZ?utm_source=generator')
-song8 = Song.create!(spotify_url: 'https://open.spotify.com/track/6yCfjMCxxqrMTwGTOfnkoa?si=5632d341a8a84884', spotify_embed_url: 'https://open.spotify.com/embed/track/6yCfjMCxxqrMTwGTOfnkoa?utm_source=generator')
-song9 = Song.create!(spotify_url: 'https://open.spotify.com/track/67ng2HslmmlZOkwZY7rqPy?si=d29f6da2d8ab4c19', spotify_embed_url: 'https://open.spotify.com/embed/track/67ng2HslmmlZOkwZY7rqPy?utm_source=generator')
+song7 = Song.create!(spotify_track_id: '2dXBGKusFEVysXoBhv9hmZ')
+song8 = Song.create!(spotify_track_id: '6yCfjMCxxqrMTwGTOfnkoa')
+song9 = Song.create!(spotify_track_id: '67ng2HslmmlZOkwZY7rqPy')
 
 
 puts "Succesfully generated #{Song.count} songs"
@@ -260,3 +260,4 @@ post9 = Post.create!(
 PostsUser.create!(post: post9, user: user3, song: song9, is_creator: true)
 
 puts "Succesfully generated #{Post.count} Posts"
+

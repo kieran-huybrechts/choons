@@ -138,10 +138,9 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_29_180201) do
   end
 
   create_table "songs", force: :cascade do |t|
-    t.string "spotify_url"
+    t.string "spotify_track_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "spotify_embed_url"
     t.string "soundcloud_url"
     t.string "soundcloud_embed_url"
   end

@@ -12,7 +12,11 @@
     <p>Library</p>
   </div>
   <div class="icon-and-text">
-    <%= cl_image_tag(current_user.photo.key, class: "avatar-small") %>
-    <p>Profile</p>
+    <% if user_signed_in? %>
+      <%= cl_image_tag(current_user.photo.key, class: "avatar-small") %>
+      <p>Profile</p>
+    <% else %>
+      <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+    <% end %>
   </div>
 </div>

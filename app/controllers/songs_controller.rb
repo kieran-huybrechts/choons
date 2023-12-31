@@ -4,4 +4,7 @@ class SongsController < ApplicationController
 
   def create
   end
+
+  def search
+  end
 end

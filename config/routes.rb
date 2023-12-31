@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'spotify_songs/search'
+  get 'spotify_songs/create'
   devise_for :users
   root to: "pages#home"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -7,3 +9,4 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
   resources :songs, only: [:new, :create]
 end
+

@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  margin-bottom: 17px;
+  z-index: 1000;
 }
 
 .navbar-icons {
@@ -74,3 +74,4 @@
 //   .no-spacing {
 //     margin-right: 0;
 //   }
+

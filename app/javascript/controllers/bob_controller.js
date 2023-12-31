@@ -1,9 +1,8 @@
 import { Controller } from "@hotwired/stimulus"
 
+// Connects to data-controller="bob"
 export default class extends Controller {
-  static targets = ["input"]
-
   connect() {
-    console.log("hello");
+    console.log("hello there!")
   }
 }
